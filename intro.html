@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Overview &#8212; Holocaust NER Lessons</title>
+    <title>INTRODUCTION TO NAMED ENTITY RECOGNITION &#8212; Introduction to Named Entity Recognition</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -54,7 +54,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Custom Named Entity Recognition for Holocaust Documents" href="01_01_introduction_to_ner.html" />
+    <link rel="next" title="1. Introduction to Named Entity Recognition" href="01_01_introduction_to_ner.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -73,8 +73,10 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
+  <img src="_static/data_science_lab_logo.png" class="logo" alt="logo">
   
-  <h1 class="site-logo" id="site-title">Holocaust NER Lessons</h1>
+  
+  <h1 class="site-logo" id="site-title">Introduction to Named Entity Recognition</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -85,69 +87,112 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="reference internal" href="#">
-   Overview
+   <p align="center">
+    INTRODUCTION TO NAMED ENTITY RECOGNITION
+   </p>
   </a>
  </li>
 </ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Key Concepts and Terms
+ </span>
+</p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="01_01_introduction_to_ner.html">
-   Introduction to Named Entity Recognition
+   1. Introduction to Named Entity Recognition
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="01_02_introduction_to_spacy.html">
-   Introduction to spaCy
+   2. Introduction to spaCy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02_rules_based_ner.html">
-   Rules-Based NER with spaCy
+   3. Rules-Based NER with spaCy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="03_machine_learning_ner.html">
-   Machine Learning NER with spaCy
+   4. Machine Learning NER with spaCy
   </a>
  </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  The Basics of NER Training
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="04_01_spaCy_Entity_Ruler.html">
-   Using SpaCy's EntityRuler
+   1. Using SpaCy's EntityRuler
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="04_02_create_ner_training_set.html">
-   Using EntityRuler to Create Training Set
+   2. Using EntityRuler to Create Training Set
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="04_03_train_spacy_ner_model.html">
-   How to Train spaCy NER Model
+   3. How to Train spaCy NER Model
   </a>
  </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Advanced NER Concepts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="05_examining_a_spacy_model.html">
-   Examining a spaCy Model in the Folder
+   1. Examining a spaCy Model in the Folder
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="06_introduction_to_word_vectors.html">
-   Introduction to Word Vectors
+   2. Introduction to Word Vectors
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="07_generating_custom_word_vectors.html">
-   Generating Custom Word Vectors with Gensim
+   3. Generating Custom Word Vectors with Gensim
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="08_loading_custom_word_vectors.html">
-   Loading Custom Word Vectors into a spaCy Model
+   4. Loading Custom Word Vectors into a spaCy Model
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Solving a Domain-Specific Problem (Holocaust)
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_01_cultivating_concentration_camp_dataset.html">
+   1. Cultivating Good Datasets for Entities
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="09_01_cultivating_concentration_camp_dataset.html">
-   Cultivating Good Datasets for Entities
+  <a class="reference internal" href="09_02_cultivating_corpus.html">
+   2. Cultivating a Corpus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_the_challenges_of_holocaust_ner.html">
+   3. The Challenges of Holocaust NER
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_introduction_to_custom_pipes.html">
+   4. Introduction to Custom Pipes
   </a>
  </li>
 </ul>
@@ -215,6 +260,47 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#p-align-center-with-a-case-study-of-holocaust-ner-p">
+   <p align="center">
+    With a Case Study of Holocaust NER
+   </p>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#p-align-center-dr-w-j-b-mattingly-p">
+     <p align="center">
+      Dr. W.J.B. Mattingly
+     </p>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#p-align-center-introduction-p">
+     <p align="center">
+      Introduction
+     </p>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#p-align-center-acknowledgments-p">
+     <p align="center">
+      Acknowledgments
+     </p>
+    </a>
+    <ul class="nav section-nav flex-column">
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -222,10 +308,40 @@
         
               <div>
                 
-  <div class="section" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
-<p>More to follow</p>
+  <div class="section" id="p-align-center-introduction-to-named-entity-recognition-p">
+<h1><p align="center">INTRODUCTION TO NAMED ENTITY RECOGNITION</p><a class="headerlink" href="#p-align-center-introduction-to-named-entity-recognition-p" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="p-align-center-with-a-case-study-of-holocaust-ner-p">
+<h2><p align="center">With a Case Study of Holocaust NER</p><a class="headerlink" href="#p-align-center-with-a-case-study-of-holocaust-ner-p" title="Permalink to this headline">¶</a></h2>
+<p align="center">by</p>
+<div class="section" id="p-align-center-dr-w-j-b-mattingly-p">
+<h3><p align="center">Dr. W.J.B. Mattingly</p><a class="headerlink" href="#p-align-center-dr-w-j-b-mattingly-p" title="Permalink to this headline">¶</a></h3>
+<p align="center">Postdoctoral Fellow at the Smithsonian Institution's Data Science Lab</p>
+<p align="center">and</p>
+<p align="center">United States Holocaust Memorial Museum</p>
+<p><br><br><br><br></p>
+</div>
+<div class="section" id="p-align-center-introduction-p">
+<h3><p align="center">Introduction</p><a class="headerlink" href="#p-align-center-introduction-p" title="Permalink to this headline">¶</a></h3>
+<p>This series of notebooks is meant to function as a textbook for named entity recognition (NER), a task of natural language processing. The purpose of NER is to extract structured data from unstructured texts, namely specific entities, such as people, places, dates, etc. To date, there is not a freely available extensive treatment of the subject and methods of NER, from using off-the-shelf frameworks to creating custom domain-specific solutions. This notebook uses several different datasets to demonstrate the utility of and the methods for using NER. These notebooks are designed to be used alongside YouTube videos, which are embedded in the relevant sections. The complete playlist can be found here: <a href="https://www.youtube.com/playlist?list=PL2VXyKi-KpYs1bSnT8bfMFyGS-wMcjesM" target="_blank">Introduction to NER</a>. If you find typos or errors in these notebooks, please do not hesitate to contact me either via <a href="https://twitter.com/wjb_mattingly" target="_blank">Twitter</a> or here on GitHub.</p>
+<p><br><br><br><br></p>
+</div>
+<div class="section" id="p-align-center-acknowledgments-p">
+<h3><p align="center">Acknowledgments</p><a class="headerlink" href="#p-align-center-acknowledgments-p" title="Permalink to this headline">¶</a></h3>
+<p>This NER Textbook was created during my postdoctoral fellowship at the Smithsonian Institution’s Data Science Lab with collaboration at the United States Holocaust Memorial Museum. It would not have been possible without the help of Rebecca Dikow, Mike Trizna, and those in the Data Science Lab who listened to, aided, and advised me while creating these notebooks. I would also like to thank the content experts at the USHMM, specifically Michael Haley Goldman, Michael Levy, and Robert Ehrenreich.</p>
+<p align="center">
+<a class="reference external image-reference" href="https://datascience.si.edu/"><img alt="dsl" class="bg-primary align-center" src="_images/data_science_lab_logo.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://si.edu/"><img alt="si" class="bg-primary align-center" src="_images/si_logo.jpg" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://www.ushmm.org/"><img alt="ushmm" class="bg-primary align-center" src="_images/ushmm_logo.jpg" style="width: 200px;" /></a>
+</p>
 <div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 
@@ -257,7 +373,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="01_01_introduction_to_ner.html" title="next page"><center> Custom Named Entity Recognition for Holocaust Documents</center></a>
+    <a class='right-next' id="next-link" href="01_01_introduction_to_ner.html" title="next page"><span class="section-number">1. </span><center>Introduction to Named Entity Recognition</center></a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
